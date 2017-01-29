@@ -1,0 +1,10 @@
+<form name="loginForm">
+    <label>Username:</label>
+    <input type="text" placeholder="Please enter your username" ng-model="$ctrl.user.username" required />
+    <br>
+    <label>Password:</label>
+    <input type="password" placeholder="Please enter your password" ng-model="$ctrl.user.password" required />
+    <br>
+    <button ng-click="$ctrl.login()">Login</button>
+    <label ng-bind="$ctrl.message"></label>
+</form>
